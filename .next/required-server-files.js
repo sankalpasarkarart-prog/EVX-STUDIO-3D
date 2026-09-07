@@ -105,7 +105,7 @@ self.__SERVER_FILES_MANIFEST={
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "D:\\EVX STUDIO WEBSITE\\evx-3d",
+    "outputFileTracingRoot": "/workspaces/EVX-STUDIO-3D",
     "enablePrerenderSourceMaps": true,
     "cacheComponents": false,
     "cacheLife": {
@@ -175,7 +175,7 @@ self.__SERVER_FILES_MANIFEST={
       "proxyPrefetch": "flexible",
       "optimisticClientCache": true,
       "manualClientBasePath": false,
-      "cpus": 11,
+      "cpus": 1,
       "memoryBasedWorkersCount": false,
       "imgOptConcurrency": null,
       "imgOptOperationCache": null,
@@ -320,32 +320,32 @@ self.__SERVER_FILES_MANIFEST={
     "htmlLimitedBots": "[\\w-]+-Google|Google-[\\w-]+|Chrome-Lighthouse|Slurp|DuckDuckBot|baiduspider|yandex|sogou|bitlybot|tumblr|vkShare|quora link preview|redditbot|ia_archiver|Bingbot|BingPreview|applebot|facebookexternalhit|facebookcatalog|Twitterbot|LinkedInBot|Slackbot|Discordbot|WhatsApp|SkypeUriPreview|Yeti|googleweblight",
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts",
-    "repoRoot": "D:\\EVX STUDIO WEBSITE\\evx-3d",
+    "repoRoot": "/workspaces/EVX-STUDIO-3D",
     "turbopack": {
-      "root": "D:\\EVX STUDIO WEBSITE\\evx-3d"
+      "root": "/workspaces/EVX-STUDIO-3D"
     },
     "distDirRoot": ".next"
   },
-  "appDir": "D:\\EVX STUDIO WEBSITE\\evx-3d",
+  "appDir": "/workspaces/EVX-STUDIO-3D",
   "relativeAppDir": "",
   "files": [
-    ".next\\package.json",
-    ".next\\routes-manifest.json",
-    ".next\\server\\pages-manifest.json",
-    ".next\\build-manifest.json",
-    ".next\\prerender-manifest.json",
-    ".next\\server\\functions-config-manifest.json",
-    ".next\\server\\middleware-manifest.json",
-    ".next\\server\\middleware-build-manifest.js",
-    ".next\\server\\app-paths-manifest.json",
-    ".next\\app-path-routes-manifest.json",
-    ".next\\server\\server-reference-manifest.js",
-    ".next\\server\\server-reference-manifest.json",
-    ".next\\server\\prefetch-hints.json",
-    ".next\\BUILD_ID",
-    ".next\\server\\next-font-manifest.js",
-    ".next\\server\\next-font-manifest.json",
-    ".next\\required-server-files.json"
+    ".next/package.json",
+    ".next/routes-manifest.json",
+    ".next/server/pages-manifest.json",
+    ".next/build-manifest.json",
+    ".next/prerender-manifest.json",
+    ".next/server/functions-config-manifest.json",
+    ".next/server/middleware-manifest.json",
+    ".next/server/middleware-build-manifest.js",
+    ".next/server/app-paths-manifest.json",
+    ".next/app-path-routes-manifest.json",
+    ".next/server/server-reference-manifest.js",
+    ".next/server/server-reference-manifest.json",
+    ".next/server/prefetch-hints.json",
+    ".next/BUILD_ID",
+    ".next/server/next-font-manifest.js",
+    ".next/server/next-font-manifest.json",
+    ".next/required-server-files.json"
   ],
   "ignore": []
 }

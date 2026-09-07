@@ -1,0 +1,12 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/career/page": "app/career/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/know-about-the-founder/page": "app/know-about-the-founder/page.js",
+  "/know-about-us/page": "app/know-about-us/page.js",
+  "/page": "app/page.js",
+  "/portfolio/page": "app/portfolio/page.js",
+  "/pricing/page": "app/pricing/page.js",
+  "/terms/page": "app/terms/page.js"
+}
