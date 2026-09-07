@@ -4,10 +4,7 @@ export default function Page() {
     <>
       
     
-    <div className="evx-loader">
-        <div className="evx-loader-text">EVX</div>
-        <div className="evx-loader-bar"></div>
-    </div>
+    
 
     
     <div className="global-animated-bg">

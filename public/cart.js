@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+setTimeout(() => {
     // ---- State ----
     let cart = []; // Array of { id, name, price, qty, isRetainer }
     let appliedCoupon = null; // { code, discountPercent }

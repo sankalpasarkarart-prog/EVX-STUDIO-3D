@@ -68,6 +68,11 @@ if __name__ == '__main__':
     # Remove existing global-animated-bg (since we have Background3D now)
     content = re.sub(r'<div className="global-animated-bg">.*?</div>', '', content, flags=re.DOTALL)
     
+    # Remove evx-loader from HTML
+    content = re.sub(r'<div class="evx-loader">.*?<div class="evx-loader-text">EVX</div>.*?<div class="evx-loader-bar"></div>.*?</div>', '', content, flags=re.DOTALL)
+    content = re.sub(r'<div class="evx-loader">\s*<div class="evx-loader-text">EVX</div>\s*</div>', '', content, flags=re.DOTALL)
+
+    
     jsx = html_to_jsx(content)
     
     output = f"""
