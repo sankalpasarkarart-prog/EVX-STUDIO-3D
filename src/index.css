@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-foreground font-sans overflow-x-hidden;
+    background-image: url('/bg-user.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center bottom;
+    background-color: #f8fafc;
+  }
+}
+
+@layer utilities {
+  .text-stroke-1 {
+    -webkit-text-stroke-width: 1px;
+  }
+  .text-stroke-foreground {
+    -webkit-text-stroke-color: rgba(15, 23, 42, 0.2);
+  }
+  .text-stroke-primary {
+    -webkit-text-stroke-color: #3b82f6;
+  }
+}
