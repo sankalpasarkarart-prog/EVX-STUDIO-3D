@@ -49,7 +49,7 @@ function App() {
       {/* Using a fixed div for background instead of bg-fixed to prevent mobile scroll lag */}
       <div className="fixed inset-0 w-full h-full bg-user bg-cover bg-center bg-no-repeat -z-10"></div>
       
-      <div className="min-h-screen text-foreground flex flex-col font-sans relative">
+      <div className="min-h-screen w-full overflow-hidden text-foreground flex flex-col font-sans relative">
         {/* Subtle overlay to ensure the image is bright and dreamy */}
         <div className="fixed inset-0 bg-white/20 pointer-events-none z-0"></div>
         

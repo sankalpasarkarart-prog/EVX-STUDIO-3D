@@ -36,19 +36,19 @@ export default function Hero() {
             Trusted by 50+ Global Brands
           </motion.h2>
           
-          <div className="text-6xl md:text-8xl lg:text-9xl font-heading font-black text-brandDark leading-[1] mb-6 drop-shadow-md">
+          <div className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-heading font-black text-brandDark leading-[1] mb-6 drop-shadow-md">
             EVX STUDIO
           </div>
           
-          <p className="text-slate-900 text-lg md:text-xl lg:text-2xl max-w-3xl font-medium leading-relaxed mb-6 drop-shadow-sm">
+          <p className="text-slate-900 text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl font-medium leading-relaxed mb-6 drop-shadow-sm">
             The top video editing and post-production company. We deliver YouTube shorts, corporate videos, SaaS animation, and more at the most competitive rates in the industry.
           </p>
           
-          <p className="text-brandDark font-heading font-black tracking-widest uppercase text-xl md:text-3xl mb-8 leading-snug drop-shadow-md">
+          <p className="text-brandDark font-heading font-black tracking-widest uppercase text-lg sm:text-xl md:text-3xl mb-8 leading-snug drop-shadow-md">
             No need to stress, let EVX handle the mess.
           </p>
           
-          <div className="flex flex-col items-center text-slate-800 font-bold text-sm md:text-base opacity-90 mb-10 max-w-2xl bg-white/20 backdrop-blur-md border border-amber-200/50 p-4 rounded-xl shadow-sm">
+          <div className="flex flex-col items-center text-slate-800 font-bold text-xs sm:text-sm md:text-base opacity-90 mb-10 max-w-2xl bg-white/20 backdrop-blur-md border border-amber-200/50 p-3 md:p-4 rounded-xl shadow-sm">
             <p>We are among the top 1% in India. The #1 video editing agency in India.</p>
             <p className="mt-1 font-accentItalic italic text-amber-700">"Who provides this quality of work in such price?"</p>
           </div>
@@ -57,16 +57,16 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex flex-wrap justify-center gap-4 items-center mt-4 mb-12"
+            className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 md:gap-4 items-center mt-4 mb-12 w-full px-4 sm:px-0"
           >
             <WhatsAppBtn 
               text="Get Free Consultation" 
-              className="px-8 py-4 bg-brandDark text-white font-bold rounded-full hover:bg-amber-600 transition-colors duration-300 shadow-xl font-heading tracking-wide uppercase text-sm"
+              className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-brandDark text-white font-bold rounded-full hover:bg-amber-600 transition-colors duration-300 shadow-xl font-heading tracking-wide uppercase text-xs md:text-sm"
             />
-            <a href="/portfolio" className="px-8 py-4 bg-transparent border-2 border-brandDark text-brandDark font-bold rounded-full hover:bg-brandDark hover:text-white transition-all duration-300 shadow-lg font-heading tracking-wide uppercase text-sm">
+            <a href="/portfolio" className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-transparent border-2 border-brandDark text-brandDark font-bold rounded-full hover:bg-brandDark hover:text-white transition-all duration-300 shadow-lg font-heading tracking-wide uppercase text-xs md:text-sm">
               View Portfolio
             </a>
-            <a href="/pricing" className="px-8 py-4 bg-amber-600 text-white font-bold rounded-full hover:bg-brandDark transition-all duration-300 shadow-lg font-heading tracking-wide uppercase text-sm">
+            <a href="/pricing" className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-amber-600 text-white font-bold rounded-full hover:bg-brandDark transition-all duration-300 shadow-lg font-heading tracking-wide uppercase text-xs md:text-sm">
               View Pricing
             </a>
           </motion.div>

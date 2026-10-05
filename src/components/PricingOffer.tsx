@@ -10,7 +10,7 @@ export default function PricingOffer() {
     <section className="py-20 relative z-10 border-y border-amber-200/20" id="pricing" style={{ perspective: 1000 }}>
       <div className="absolute inset-0 bg-amber-50/10 pointer-events-none"></div>
       <motion.div 
-        initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={slideInVar}
+        initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.1, margin: "-100px" }} variants={slideInVar}
         className="container mx-auto px-6 lg:px-12 text-center relative z-10 bg-amber-100/10 backdrop-blur-md border border-amber-200/30 shadow-2xl rounded-3xl p-12 max-w-4xl"
       >
         <div className="inline-block bg-white/50 backdrop-blur-sm border border-amber-300/50 px-6 py-2 rounded-full mb-6 shadow-sm">

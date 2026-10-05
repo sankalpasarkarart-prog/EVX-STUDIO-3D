@@ -29,32 +29,32 @@ export default function Features() {
         
         {/* Stats */}
         <motion.div 
-          initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={slideInVar}
-          className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-24 pb-16 bg-amber-100/10 backdrop-blur-md border border-amber-200/30 shadow-2xl rounded-3xl p-10"
+          initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.1, margin: "-100px" }} variants={slideInVar}
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 mb-20 md:mb-24 pb-12 md:pb-16 bg-amber-100/10 backdrop-blur-md border border-amber-200/30 shadow-2xl rounded-3xl p-6 md:p-10"
         >
           <div className="text-center">
-            <h3 className="text-4xl md:text-6xl font-heading font-black text-amber-600 mb-2 drop-shadow-sm">4</h3>
-            <p className="text-brandDark font-bold tracking-wide uppercase text-sm font-heading">Years of Experience</p>
+            <h3 className="text-3xl sm:text-4xl md:text-6xl font-heading font-black text-amber-600 mb-1 md:mb-2 drop-shadow-sm">4</h3>
+            <p className="text-brandDark font-bold tracking-wide uppercase text-xs md:text-sm font-heading">Years of Experience</p>
           </div>
           <div className="text-center">
-            <h3 className="text-4xl md:text-6xl font-heading font-black text-amber-600 mb-2 drop-shadow-sm">15+</h3>
-            <p className="text-brandDark font-bold tracking-wide uppercase text-sm font-heading">Team Members</p>
+            <h3 className="text-3xl sm:text-4xl md:text-6xl font-heading font-black text-amber-600 mb-1 md:mb-2 drop-shadow-sm">15+</h3>
+            <p className="text-brandDark font-bold tracking-wide uppercase text-xs md:text-sm font-heading">Team Members</p>
           </div>
           <div className="text-center">
-            <h3 className="text-4xl md:text-6xl font-heading font-black text-amber-600 mb-2 drop-shadow-sm">500+</h3>
-            <p className="text-brandDark font-bold tracking-wide uppercase text-sm font-heading">Projects Delivered</p>
+            <h3 className="text-3xl sm:text-4xl md:text-6xl font-heading font-black text-amber-600 mb-1 md:mb-2 drop-shadow-sm">500+</h3>
+            <p className="text-brandDark font-bold tracking-wide uppercase text-xs md:text-sm font-heading">Projects Delivered</p>
           </div>
           <div className="text-center">
-            <h3 className="text-4xl md:text-6xl font-heading font-black text-amber-600 mb-2 drop-shadow-sm">50+</h3>
-            <p className="text-brandDark font-bold tracking-wide uppercase text-sm font-heading">Global Clients</p>
+            <h3 className="text-3xl sm:text-4xl md:text-6xl font-heading font-black text-amber-600 mb-1 md:mb-2 drop-shadow-sm">50+</h3>
+            <p className="text-brandDark font-bold tracking-wide uppercase text-xs md:text-sm font-heading">Global Clients</p>
           </div>
         </motion.div>
 
         {/* How It Works */}
-        <div className="mb-24">
+        <div className="mb-20 md:mb-24">
           <motion.h2 
-            initial="hidden" whileInView="visible" viewport={{ once: true }} variants={slideInVar}
-            className="text-3xl md:text-5xl font-heading font-black text-brandDark text-center mb-12 drop-shadow-sm"
+            initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.1 }} variants={slideInVar}
+            className="text-2xl sm:text-3xl md:text-5xl font-heading font-black text-brandDark text-center mb-8 md:mb-12 drop-shadow-sm"
           >
             How It Works
           </motion.h2>
@@ -64,7 +64,7 @@ export default function Features() {
                 key={i}
                 initial={{ opacity: 0, z: -50, y: 50, rotateX: 10 }}
                 whileInView={{ opacity: 1, z: 0, y: 0, rotateX: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
+                viewport={{ once: false, amount: 0.1, margin: "-50px" }}
                 transition={{ delay: i * 0.2, duration: 0.8 }}
                 className="bg-amber-100/10 backdrop-blur-md border border-amber-200/30 shadow-xl rounded-3xl p-8 hover:bg-amber-100/30 hover:border-amber-300/50 transition-all duration-300 group"
                 style={{ transformStyle: "preserve-3d" }}
@@ -82,8 +82,8 @@ export default function Features() {
         {/* Why Us Detailed */}
         <div>
           <motion.h2 
-            initial="hidden" whileInView="visible" viewport={{ once: true }} variants={slideInVar}
-            className="text-3xl md:text-5xl font-heading font-black text-brandDark text-center mb-4 drop-shadow-sm"
+            initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.1 }} variants={slideInVar}
+            className="text-2xl sm:text-3xl md:text-5xl font-heading font-black text-brandDark text-center mb-4 drop-shadow-sm"
           >
             Why Choose EVX Studio?
           </motion.h2>
@@ -91,27 +91,27 @@ export default function Features() {
           <motion.p 
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-black font-medium text-sm md:text-base italic text-center max-w-2xl mx-auto mb-12 bg-white/30 backdrop-blur-sm border border-amber-200/50 p-3 rounded-xl shadow-sm"
+            viewport={{ once: false, amount: 0.1 }}
+            className="text-black font-medium text-xs sm:text-sm md:text-base italic text-center max-w-2xl mx-auto mb-12 bg-white/30 backdrop-blur-sm border border-amber-200/50 p-3 rounded-xl shadow-sm"
           >
             "They say money can't buy time—but it can definitely pay us to save yours."
           </motion.p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {features.map((feat, i) => (
               <motion.div 
                 key={i}
                 initial={{ opacity: 0, scale: 0.9, rotateY: 10 }}
                 whileInView={{ opacity: 1, scale: 1, rotateY: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
+                viewport={{ once: false, amount: 0.1, margin: "-50px" }}
                 transition={{ delay: i * 0.1, duration: 0.6 }}
-                className="p-8 bg-amber-100/10 backdrop-blur-sm border border-amber-200/30 shadow-lg rounded-3xl hover:bg-amber-100/30 hover:border-amber-300/50 group transition-all duration-300"
+                className="p-6 md:p-8 bg-amber-100/10 backdrop-blur-sm border border-amber-200/30 shadow-lg rounded-3xl hover:bg-amber-100/30 hover:border-amber-300/50 group transition-all duration-300"
               >
                 <div className="text-amber-600 mb-4 group-hover:scale-110 transition-transform origin-left w-10 h-10">
                   {feat.icon}
                 </div>
                 <h3 className="text-xl font-bold font-heading text-brandDark mb-2">{feat.title}</h3>
-                <p className="text-slate-800 text-sm font-medium leading-relaxed">{feat.desc}</p>
+                <p className="text-slate-800 text-xs sm:text-sm font-medium leading-relaxed">{feat.desc}</p>
               </motion.div>
             ))}
           </div>

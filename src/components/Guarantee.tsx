@@ -11,7 +11,7 @@ export default function Guarantee() {
       <div className="absolute inset-0 bg-amber-50/10 pointer-events-none border-y border-amber-200/20"></div>
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
         <motion.div 
-          initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }} variants={slideInVar}
+          initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.1, margin: "-50px" }} variants={slideInVar}
           className="bg-amber-100/10 backdrop-blur-md border border-amber-200/30 shadow-2xl rounded-3xl text-center relative overflow-hidden py-16 px-8 max-w-5xl mx-auto"
         >
           {/* Decorative background elements */}

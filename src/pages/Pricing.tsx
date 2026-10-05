@@ -101,7 +101,7 @@ export default function Order() {
       <motion.div 
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
+        viewport={{ once: false, amount: 0.1, margin: "-100px" }}
         className="mb-24 text-center overflow-hidden"
         ref={barRef}
       >
@@ -140,7 +140,7 @@ export default function Order() {
                 key={service.id}
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
+                viewport={{ once: false, amount: 0.1, margin: "-50px" }}
                 transition={{ delay: i * 0.1 }}
                 className="bg-white/40 backdrop-blur-md border border-amber-200/30 rounded-3xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 shadow-lg hover:shadow-xl transition-shadow"
               >
@@ -167,7 +167,7 @@ export default function Order() {
           <motion.div 
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false, amount: 0.1 }}
             className="bg-amber-100/10 backdrop-blur-md border border-amber-200/50 rounded-3xl p-8 mt-12 shadow-2xl"
           >
             <h2 className="text-3xl font-heading font-black text-brandDark mb-4">Monthly Retainer Package</h2>
@@ -223,7 +223,7 @@ export default function Order() {
           <motion.div 
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false, amount: 0.1 }}
             className="sticky top-32 bg-amber-100/20 backdrop-blur-xl border border-amber-200/50 rounded-3xl p-8 shadow-2xl"
           >
             <h3 className="text-2xl font-heading font-black text-brandDark mb-6 flex items-center gap-2">

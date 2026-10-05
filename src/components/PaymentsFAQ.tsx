@@ -27,7 +27,7 @@ export default function PaymentsFAQ() {
       <div className="container mx-auto px-6 lg:px-12 max-w-4xl relative z-10">
         
         {/* Payments */}
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={slideUp} className="mb-20 text-center bg-amber-100/10 backdrop-blur-md border border-amber-200/30 rounded-3xl p-8 shadow-xl">
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.1 }} variants={slideUp} className="mb-20 text-center bg-amber-100/10 backdrop-blur-md border border-amber-200/30 rounded-3xl p-8 shadow-xl">
           <h3 className="text-sm font-heading font-bold text-amber-700 uppercase tracking-widest mb-6">We Accept</h3>
           <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-brandDark font-black">
             {["PayPal", "Wise", "Visa", "Mastercard", "RuPay", "UPI", "NEFT", "Google Pay", "Crypto"].map(payment => (
@@ -37,7 +37,7 @@ export default function PaymentsFAQ() {
         </motion.div>
 
         {/* FAQ */}
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={slideUp}>
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.1 }} variants={slideUp}>
           <h2 className="text-3xl md:text-5xl font-heading font-black text-brandDark text-center mb-12 drop-shadow-sm">
             Frequently Asked Questions
           </h2>

@@ -27,23 +27,23 @@ export default function GraphSection() {
       <div className="absolute inset-0 bg-amber-50/10 pointer-events-none"></div>
       <div className="container mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center gap-12 relative z-10">
         
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={leftSlide} className="lg:w-1/2">
-          <h2 className="text-3xl md:text-5xl font-heading font-black text-brandDark mb-6 drop-shadow-sm leading-tight">
-            Grow your business <span className="text-amber-600 font-accentItalic italic text-5xl md:text-7xl font-semibold relative top-1">30% faster</span> with us
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.1 }} variants={leftSlide} className="lg:w-1/2">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-heading font-black text-brandDark mb-4 md:mb-6 drop-shadow-sm leading-tight">
+            Grow your business <span className="text-amber-600 font-accentItalic italic text-4xl sm:text-5xl md:text-7xl font-semibold relative top-1">30% faster</span> with us
           </h2>
-          <p className="text-slate-800 font-medium text-lg leading-relaxed mb-8">
+          <p className="text-slate-800 font-medium text-base md:text-lg leading-relaxed mb-6 md:mb-8">
             High-quality, retention-optimized videos are the secret to algorithm dominance. 
             By partnering with EVX Studio, you aren't just getting edits; you are investing in a proven growth strategy. 
             Watch your engagement, followers, and revenue multiply as we take your content to the top.
           </p>
           <WhatsAppBtn 
             text="Start Scaling Today"
-            className="inline-block px-8 py-4 bg-brandDark text-white font-bold font-heading uppercase tracking-wide rounded-full hover:bg-amber-600 transition-colors shadow-lg hover:scale-105 duration-300"
+            className="w-full sm:w-auto text-center inline-block px-6 py-3 md:px-8 md:py-4 bg-brandDark text-white font-bold font-heading uppercase tracking-wide text-xs md:text-sm rounded-full hover:bg-amber-600 transition-colors shadow-lg hover:scale-105 duration-300"
           />
         </motion.div>
 
         <motion.div 
-          initial="hidden" whileInView="visible" viewport={{ once: true }} variants={rightSlide}
+          initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.1 }} variants={rightSlide}
           className="lg:w-1/2 w-full h-[400px] bg-amber-100/10 backdrop-blur-md border border-amber-200/30 shadow-2xl rounded-3xl p-6 relative"
         >
           <h3 className="text-center text-slate-700 mb-4 font-heading font-bold text-sm uppercase tracking-widest">Projected Social Media Growth</h3>

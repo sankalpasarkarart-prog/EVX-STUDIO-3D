@@ -69,7 +69,7 @@ export default function Portfolio() {
       <div className="space-y-24 relative z-10">
         {portfolioCategories.map((category, idx) => (
           <div key={idx}>
-            <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="flex items-center gap-4 mb-10">
+            <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false, amount: 0.1 }} className="flex items-center gap-4 mb-10">
               <h2 className="text-2xl md:text-3xl font-heading font-black text-brandDark whitespace-nowrap">{category.title}</h2>
               <div className="h-[2px] bg-amber-200/50 flex-grow shadow-sm"></div>
             </motion.div>
@@ -80,7 +80,7 @@ export default function Portfolio() {
                   key={vIdx}
                   initial={{ opacity: 0, z: -50, y: 50, rotateX: 10 }}
                   whileInView={{ opacity: 1, z: 0, y: 0, rotateX: 0 }}
-                  viewport={{ once: true, margin: "-50px" }}
+                  viewport={{ once: false, amount: 0.1, margin: "-50px" }}
                   transition={{ delay: vIdx * 0.1 }}
                   className={`relative rounded-3xl overflow-hidden bg-amber-100/10 backdrop-blur-md border border-amber-200/30 shadow-2xl ${
                     video.format === 'vertical' ? 'w-full max-w-[320px] aspect-[9/16]' : 'w-full lg:w-[calc(50%-1rem)] xl:max-w-[600px] aspect-video'
@@ -102,7 +102,7 @@ export default function Portfolio() {
       </div>
       
       <motion.div 
-        initial="hidden" whileInView="visible" viewport={{ once: true }} variants={slideInVar}
+        initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.1 }} variants={slideInVar}
         className="mt-32 text-center bg-amber-100/10 backdrop-blur-md border border-amber-200/30 rounded-3xl p-12 shadow-2xl relative z-10"
       >
         <h3 className="text-2xl md:text-4xl font-heading font-black text-brandDark mb-4">Ready to upgrade your content?</h3>
