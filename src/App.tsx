@@ -46,8 +46,10 @@ function App() {
       <ScrollToTop />
       <Noise />
       <PageLoader />
-      {/* Ensure the background image is applied here, overriding any solid background color */}
-      <div className="min-h-screen bg-user bg-cover bg-fixed bg-center bg-no-repeat text-foreground flex flex-col font-sans relative">
+      {/* Using a fixed div for background instead of bg-fixed to prevent mobile scroll lag */}
+      <div className="fixed inset-0 w-full h-full bg-user bg-cover bg-center bg-no-repeat -z-10"></div>
+      
+      <div className="min-h-screen text-foreground flex flex-col font-sans relative">
         {/* Subtle overlay to ensure the image is bright and dreamy */}
         <div className="fixed inset-0 bg-white/20 pointer-events-none z-0"></div>
         

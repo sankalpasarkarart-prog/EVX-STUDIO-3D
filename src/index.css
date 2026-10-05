@@ -5,10 +5,6 @@
 @layer base {
   body {
     @apply text-foreground font-sans overflow-x-hidden;
-    background-image: url('/bg-user.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center bottom;
     background-color: #f8fafc;
   }
 }

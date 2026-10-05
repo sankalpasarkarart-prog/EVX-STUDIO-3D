@@ -9,7 +9,7 @@ export default function Hero() {
     <section className="relative w-full min-h-screen overflow-hidden flex flex-col justify-center pt-24 pb-32">
       {/* 3D Scene Layer */}
       <div className="absolute inset-0 z-0 pointer-events-auto">
-        <Canvas camera={{ position: [0, 0, 8], fov: 45 }}>
+        <Canvas camera={{ position: [0, 0, 8], fov: 45 }} dpr={[1, 1.5]}>
           <Suspense fallback={null}>
             <Scene />
           </Suspense>

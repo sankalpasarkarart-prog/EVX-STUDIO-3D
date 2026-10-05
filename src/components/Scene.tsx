@@ -17,7 +17,7 @@ function DelicateLeaf({ position, color, speed, rotationSpeed }: { position: [nu
     return geo;
   }, []);
 
-  const initialY = position[1];
+  
   const initialX = position[0];
 
   useFrame((state, delta) => {
@@ -51,14 +51,13 @@ function DelicateLeaf({ position, color, speed, rotationSpeed }: { position: [nu
 
   return (
     <mesh ref={meshRef} position={position} geometry={leafGeometry}>
-      <meshPhysicalMaterial 
+      <meshStandardMaterial 
         color={color} 
-        roughness={0.2}
-        transmission={0.4}
-        thickness={0.1}
-        clearcoat={1}
+        roughness={0.3}
+        transparent={true}
+        opacity={0.8}
         emissive={color}
-        emissiveIntensity={0.2}
+        emissiveIntensity={0.3}
         side={THREE.DoubleSide}
       />
     </mesh>
@@ -85,7 +84,7 @@ function Butterfly({ initialPosition, color }: { initialPosition: [number, numbe
     return new THREE.ShapeGeometry(shape);
   }, []);
 
-  useFrame((state, delta) => {
+  useFrame((state) => {
     if (!groupRef.current || !leftWing.current || !rightWing.current) return;
     
     const t = state.clock.elapsedTime + randomOffset;
@@ -144,24 +143,24 @@ function Butterfly({ initialPosition, color }: { initialPosition: [number, numbe
   return (
     <group ref={groupRef} position={initialPosition} scale={[0.15, 0.15, 0.15]}>
       <mesh ref={leftWing} geometry={wingGeometry}>
-        <meshPhysicalMaterial 
+        <meshStandardMaterial 
           color={color} 
           emissive={color}
           emissiveIntensity={0.6}
-          transmission={0.6}
-          roughness={0.1}
-          clearcoat={1}
+          transparent={true}
+          opacity={0.7}
+          roughness={0.2}
           side={THREE.DoubleSide}
         />
       </mesh>
       <mesh ref={rightWing} geometry={wingGeometry}>
-        <meshPhysicalMaterial 
+        <meshStandardMaterial 
           color={color}
           emissive={color}
           emissiveIntensity={0.6}
-          transmission={0.6}
-          roughness={0.1}
-          clearcoat={1}
+          transparent={true}
+          opacity={0.7}
+          roughness={0.2}
           side={THREE.DoubleSide}
         />
       </mesh>

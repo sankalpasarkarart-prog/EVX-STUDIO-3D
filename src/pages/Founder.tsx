@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Palette, Video, Users, Code, Brush } from 'lucide-react';
+import { Palette, Video, Users, Code } from 'lucide-react';
 
 export default function Founder() {
   const slideInVar = {
