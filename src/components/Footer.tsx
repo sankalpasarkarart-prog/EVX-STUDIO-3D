@@ -95,9 +95,9 @@ export default function Footer() {
         
         <div className="border-t border-amber-200/20 pt-8 flex flex-col md:flex-row justify-between items-center text-black font-black font-sans gap-4">
           <p>&copy; {new Date().getFullYear()} EVX Studio. All rights reserved.</p>
-          <a href="/pricing" className="px-6 py-2 bg-brandDark text-white font-bold font-sans rounded-full hover:bg-amber-600 transition-colors shadow-lg not-italic uppercase tracking-widest text-xs">
+          <Link to="/pricing" className="px-6 py-2 bg-brandDark text-white font-bold font-sans rounded-full hover:bg-amber-600 transition-colors shadow-lg not-italic uppercase tracking-widest text-xs">
             View Pricing
-          </a>
+          </Link>
           <p>Made with ❤️ by EVX STUDIO in India.</p>
         </div>
       </div>

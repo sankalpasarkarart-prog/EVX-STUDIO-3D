@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export default function Guarantee() {
   const slideInVar = {
@@ -27,7 +28,7 @@ export default function Guarantee() {
           </p>
 
           <p className="text-xs text-amber-700 font-bold uppercase font-heading tracking-widest mt-8 relative z-10">
-            <a href="/terms" className="hover:text-amber-500 transition-colors underline decoration-amber-300 underline-offset-4">Terms and Condition Applied</a>. The terms and conditions are available at the bottom of the website.
+            <Link to="/terms" className="hover:text-amber-500 transition-colors underline decoration-amber-300 underline-offset-4">Terms and Condition Applied</Link>. The terms and conditions are available at the bottom of the website.
           </p>
         </motion.div>
       </div>

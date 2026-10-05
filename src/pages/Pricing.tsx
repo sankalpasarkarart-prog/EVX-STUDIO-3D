@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { CreditCard, ShoppingCart, CheckCircle, Smartphone, Landmark, Bitcoin, DollarSign, Send, ShieldCheck, X, Check, MessageCircle } from 'lucide-react';
 
 const paymentLogos = [
@@ -325,7 +326,7 @@ export default function Order() {
                 </div>
                 <input type="checkbox" className="hidden" checked={agreed} onChange={() => setAgreed(!agreed)} />
                 <span className="text-sm text-slate-800 font-bold select-none">
-                  I have read and agree to the <a href="/terms" target="_blank" rel="noreferrer" className="text-amber-600 hover:text-amber-700 transition-colors underline underline-offset-4">Terms and Conditions</a>
+                  I have read and agree to the <Link to="/terms" target="_blank" rel="noreferrer" className="text-amber-600 hover:text-amber-700 transition-colors underline underline-offset-4">Terms and Conditions</Link>
                 </span>
               </label>
 

@@ -1,6 +1,7 @@
 import { Canvas } from '@react-three/fiber';
 import { Suspense } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import Scene from './Scene';
 import WhatsAppBtn from './WhatsAppBtn';
 
@@ -63,12 +64,12 @@ export default function Hero() {
               text="Get Free Consultation" 
               className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-brandDark text-white font-bold rounded-full hover:bg-amber-600 transition-colors duration-300 shadow-xl font-heading tracking-wide uppercase text-xs md:text-sm"
             />
-            <a href="/portfolio" className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-transparent border-2 border-brandDark text-brandDark font-bold rounded-full hover:bg-brandDark hover:text-white transition-all duration-300 shadow-lg font-heading tracking-wide uppercase text-xs md:text-sm">
+            <Link to="/portfolio" className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-transparent border-2 border-brandDark text-brandDark font-bold rounded-full hover:bg-brandDark hover:text-white transition-all duration-300 shadow-lg font-heading tracking-wide uppercase text-xs md:text-sm text-center">
               View Portfolio
-            </a>
-            <a href="/pricing" className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-amber-600 text-white font-bold rounded-full hover:bg-brandDark transition-all duration-300 shadow-lg font-heading tracking-wide uppercase text-xs md:text-sm">
+            </Link>
+            <Link to="/pricing" className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-amber-600 text-white font-bold rounded-full hover:bg-brandDark transition-all duration-300 shadow-lg font-heading tracking-wide uppercase text-xs md:text-sm text-center">
               View Pricing
-            </a>
+            </Link>
           </motion.div>
           
           <span className="text-brandDark font-accentItalic italic text-2xl font-bold bg-white/40 px-6 py-2 rounded-full backdrop-blur-md">
